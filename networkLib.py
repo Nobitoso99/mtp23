@@ -70,7 +70,7 @@ def transmitter():
     radio.payload_size = 32
     radio.channel = 26 #6A 20
     radio.data_rate = rf24.RF24_250KBPS
-    radio.set_pa_level(rf24.rf24_pa_dbm_e.RF24_PA_HIGH)
+    radio.set_pa_level(rf24.rf24_pa_dbm_e.RF24_PA_LOW)
     radio.dynamic_payloads = True
     radio.set_auto_ack(True)
     radio.ack_payloads = False
